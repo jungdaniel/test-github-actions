@@ -27,4 +27,4 @@ jobs:
       - name: Print secret
         env:
           FIRST_SECRET: ${{ secrets.FIRST_SECRET }}
-        run: echo $FIRST_SECRET
+        run: echo test $FIRST_SECRET
