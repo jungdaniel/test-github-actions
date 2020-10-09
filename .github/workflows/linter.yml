@@ -23,3 +23,8 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print secret
+        env:
+          FIRST_SECRET: ${{ secrets. FIRST_SECRET }}
+        run: echo $FIRST_SECRET
